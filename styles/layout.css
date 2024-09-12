@@ -1,0 +1,75 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-white: #fbf5f3;
+  --slidev-theme-black: #333;
+  --slidev-theme-blue: #3297ae;
+  --slidev-theme-yellow: #ffcc85;
+}
+
+.text-theme-blue {
+  color: var(--slidev-theme-blue);
+}
+
+.slidev-layout {
+  background-color: var(--slidev-theme-white);
+  color: var(--slidev-theme-black);
+
+  h1 + p,
+  h1 + ul,
+  h2 + p,
+  h2 + ul,
+  h3 + p,
+  h3 + ul {
+    @apply mt-4 mb-4;
+  }
+}
+
+.slidev-layout.cover,
+.slidev-layout.lead,
+.slidev-layout.end {
+  @apply h-full grid;
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+}
+
+.slidev-layout.lead {
+  @apply text-center;
+
+  h1 {
+    @apply text-5xl leading-20;
+  }
+}
+
+.slidev-layout.cover,
+.slidev-layout.end {
+  h1 {
+    @apply text-6xl leading-20;
+  }
+  h1 + p {
+    @apply opacity-50;
+  }
+}
+
+u,
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--slidev-theme-yellow);
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: -0.125rem;
+  text-decoration-skip-ink: none;
+}
+
+strong,
+.strong {
+  color: var(--slidev-theme-blue);
+}
+
+:not(pre) > code {
+  background-color: var(--slidev-theme-blue) !important;
+  color: var(--slidev-theme-white);
+}
