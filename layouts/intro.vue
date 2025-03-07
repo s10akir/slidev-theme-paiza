@@ -16,7 +16,7 @@
   padding: 0rem;
   height: 100%;
 
-  outline: 0.125rem solid var(--slidev-theme-blue);
+  outline: 0.125rem solid var(--slidev-theme-career-primary);
   outline-offset: -2rem;
 
   .band-title {
@@ -31,7 +31,7 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
-    background-color: var(--slidev-theme-blue);
+    background-color: var(--slidev-theme-career-primary);
 
     writing-mode: vertical-rl;
     text-orientation: sideways;

@@ -27,12 +27,12 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
-    background-color: var(--slidev-theme-blue);
+    background-color: var(--slidev-theme-career-primary);
 
     writing-mode: vertical-rl;
     text-orientation: sideways;
 
-    outline: 0.125rem solid var(--slidev-theme-white);
+    outline: 0.125rem solid var(--slidev-theme-anti);
     outline-offset: -2rem;
   }
 

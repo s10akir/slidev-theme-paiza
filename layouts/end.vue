@@ -9,8 +9,8 @@
 
 <style scoped>
 .end {
-  background-color: var(--slidev-theme-blue);
-  color: var(--slidev-theme-white);
+  background-color: var(--slidev-theme-career-primary);
+  color: var(--slidev-theme-anti);
 }
 
 .end-logo {

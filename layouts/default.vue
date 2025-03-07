@@ -11,7 +11,7 @@
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 
-  outline: 0.125rem solid var(--slidev-theme-blue);
+  outline: 0.125rem solid var(--slidev-theme-career-primary);
   outline-offset: -2rem;
 
   h1 {

@@ -14,9 +14,9 @@
 
 <style scoped>
 .cover {
-  background-color: var(--slidev-theme-blue);
-  color: var(--slidev-theme-white);
-  outline: 0.125rem solid var(--slidev-theme-white);
+  background-color: var(--slidev-theme-career-primary);
+  color: var(--slidev-theme-anti);
+  outline: 0.125rem solid var(--slidev-theme-anti);
   outline-offset: -2rem;
 }
 

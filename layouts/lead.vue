@@ -8,7 +8,7 @@
 
 <style scoped>
 .lead {
-  outline: 0.125rem solid var(--slidev-theme-blue);
+  outline: 0.125rem solid var(--slidev-theme-career-primary);
   outline-offset: -2rem;
 }
 </style>

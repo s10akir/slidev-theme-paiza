@@ -2,6 +2,7 @@
 theme: ./
 transition: fade-out
 mdc: true
+# aspectRatio: 4/3
 ---
 
 # slidev-theme-paiza
@@ -9,34 +10,116 @@ mdc: true
 slidev custom theme for paiza engineers
 
 ---
-layout: intro
+layout: lead
 ---
 
 # What is slidev-theme-paiza?
 
-`slidev-theme-paiza` は [paiza のイメージに合わせてデザインした]{.underline}、Slidevのカスタムテーマです :twemoji-sun
+slidev-theme-paiza は [paiza のイメージに合わせてデザインした]{.underline}、  
+Slidevのカスタムテーマです :twemoji-sun
 
+---
+layout: intro
 ---
 
 # COLOR SCHEME
 
-- [■]{style="color: var(--slidev-theme-black)" } --slidev-theme-black
-- [■]{style="color: var(--slidev-theme-white)" } --slidev-theme-white
-- [■]{style="color: var(--slidev-theme-blue)" } --slidev-theme-blue
-- [■]{style="color: var(--slidev-theme-yellow)"} --slidev-theme-yellow
+実際の変数名やクラス名は設定ファイルを参照してください。
 
-<twemoji-light-bulb/> front matterやpackage.jsonで同名の変数を定義することで、[これらを変更することもできます]{.underline}。
+CSSの変数定義は `styles/layout.scss` にあります。  
+UnoCSSのテーマ定義は `uno.config.ts` にあります。
+
+---
+
+# Base Colors
+
+名前の付いた基本色です。
+
+- [■]{.text-normal} normal
+- [■]{.text-anti} anti
+- [■]{.text-success} success
+- [■]{.text-attention} attention
+- [■]{.text-annotation} annotation
+
+---
+
+# Service Colors
+
+paizaのサービスカラーです。
+
+::div{.grid.grid-cols-3}
+
+:::div
+総合Top
+
+- [■]{.text-top-primary} top-primary
+- [■]{.text-top-secondary} top-secondary
+
+:::
+
+:::div
+Career
+
+- [■]{.text-career-primary} career-primary
+- [■]{.text-career-secondary} career-secondary
+- [■]{.text-career-global} career-global
+
+:::
+
+:::div
+Student
+
+- [■]{.text-student-primary} student-primary
+- [■]{.text-student-secondary} student-secondary
+- [■]{.text-student-global} student-global
+
+:::
+
+:::div
+EN:TRY
+
+- [■]{.text-en_try-primary} en_try-primary
+- [■]{.text-en_try-secondary} en_try-secondary
+- [■]{.text-en_try-global} en_try-global
+
+:::
+
+:::div
+Learning
+
+- [■]{.text-learning-primary} learning-primary
+- [■]{.text-learning-secondary} learning-secondary
+- [■]{.text-learning-global} learning-global
+
+:::
+::
+
+---
+
+# BG Colors
+
+主に背景色に使う想定の淡い色です。
+
+- [■]{.text-b-normal} b-normal
+- [■]{.text-b-accent} b-accent
+- [■]{.text-b-infomation} b-information
+- [■]{.text-b-form} b-form
+- [■]{.text-b-disabled} b-disabled
+- [■]{.text-b-error} b-error
+- [■]{.text-b-attention} b-attention
+- [■]{.text-b-safe} b-safe
+
+---
+
+<twemoji-light-bulb/> front matterやpackage.jsonで同名の変数を定義することで[これらを変更することもできます]{.underline}。
 
 :br
 
 ```yaml
 ---
-# 例: これがデフォルト値
+# 例:
 themeConfig:
-  white: "#fbf5f3"
-  black: "#333"
-  blue: "#3297ae"
-  yellow: "#ffcc85"
+  normal: "#fbf5f3"
 ---
 ```
 
@@ -64,6 +147,21 @@ themeConfig:
 
 ---
 
+# COMPONENT
+
+## Label
+
+badgeのようなコンポーネントです。
+
+<Label>OK</Label>
+<Label color="attention">必須</Label>
+<Label :outline="false">OK</Label>
+<Label color="attention" :outline="false">必須</Label>
+<Label color="annotation" :outline="true">通過ランク：S</Label>
+<Label color="annotation" :outline="false">通過ランク：S</Label>
+
+---
+
 # TRANSITION
 
 <twemoji-light-bulb /> slidev標準のトランジションが利用できます。
@@ -83,5 +181,4 @@ layout: end
 class: "text-center"
 ---
 
-# 異能を伸ばせ。
-
+# 異能を伸ばせ

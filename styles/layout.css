@@ -1,18 +1,43 @@
 :root {
   /* default theme color */
   /* can be overrided by uses `themeConfig` option */
-  --slidev-theme-white: #fbf5f3;
-  --slidev-theme-black: #333;
-  --slidev-theme-blue: #3297ae;
-  --slidev-theme-yellow: #ffcc85;
-}
 
-.text-theme-blue {
-  color: var(--slidev-theme-blue);
+  /* base colors */
+  --slidev-theme-normal: #333333;
+  --slidev-theme-anti: #FFFFFF;
+  --slidev-theme-success: #108924;
+  --slidev-theme-attention: #EA640A;
+  --slidev-theme-annotation: #6E7687;
+  --slidev-theme-tertiary: #E2EEFF;
+
+  /* service color */
+  --slidev-theme-top-primary: #033371;
+  --slidev-theme-top-secondary: #0660D4;
+  --slidev-theme-career-primary: #3D9FB7;
+  --slidev-theme-career-secondary: #11778F;
+  --slidev-theme-career-global: #278EA7;
+  --slidev-theme-en_try-primary: #3C3C3C;
+  --slidev-theme-en_try-secondary: #222222;
+  --slidev-theme-en_try-global: #535353;
+  --slidev-theme-student-primary: #195C9A;
+  --slidev-theme-student-secondary: #073F67;
+  --slidev-theme-student-global: #084986;
+  --slidev-theme-learning-primary: #93B636;
+  --slidev-theme-learning-secondary: #5d8f47;
+  --slidev-theme-learning-global: #79A637;
+
+  --slidev-theme-b-normal: #FFFFFF;
+  --slidev-theme-b-accent: #F5F9FF;
+  --slidev-theme-b-information: #F5F9FF;
+  --slidev-theme-b-form: #F5F9FF;
+  --slidev-theme-b-disabled: #D2D5DA;
+  --slidev-theme-b-error: #FEF9F9;
+  --slidev-theme-b-attention: #FFF3EB;
+  --slidev-theme-b-safe: #EBFFEE;
 }
 
 .slidev-layout {
-  background-color: var(--slidev-theme-white);
+  background-color: var(--slidev-theme-anti);
   color: var(--slidev-theme-black);
 
   h1 + p,
@@ -58,18 +83,18 @@
 u,
 .underline {
   text-decoration: underline;
-  text-decoration-color: var(--slidev-theme-yellow);
-  text-decoration-thickness: 0.25rem;
-  text-underline-offset: -0.125rem;
+  text-decoration-color: var(--slidev-theme-b-attention);
+  text-decoration-thickness: 0.5rem;
+  text-underline-offset: -0.5rem;
   text-decoration-skip-ink: none;
 }
 
 strong,
 .strong {
-  color: var(--slidev-theme-blue);
+  color: var(--slidev-theme-career-primary);
 }
 
 :not(pre) > code {
-  background-color: var(--slidev-theme-blue) !important;
-  color: var(--slidev-theme-white);
+  background-color: var(--slidev-theme-career-primary) !important;
+  color: var(--slidev-theme-anti);
 }
