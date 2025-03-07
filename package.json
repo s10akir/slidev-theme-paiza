@@ -17,11 +17,11 @@
   },
   "dependencies": {
     "@iconify-json/twemoji": "^1.2.0",
-    "@slidev/types": "^0.49.29",
+    "@slidev/types": "^51",
     "prism-theme-vars": "^0.2.5"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.49.29",
+    "@slidev/cli": "^51",
     "prettier": "^3.3.3",
     "prettier-plugin-slidev": "^1.0.5"
   },
