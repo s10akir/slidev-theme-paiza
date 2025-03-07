@@ -26,10 +26,16 @@ layout: intro
 
 # COLOR SCHEME
 
-実際の変数名やクラス名は設定ファイルを参照してください。
+<twemoji-light-bulb/> 実際の変数名やクラス名は設定ファイルを参照してください。
 
-CSSの変数定義は `styles/layout.scss` にあります。  
-UnoCSSのテーマ定義は `uno.config.ts` にあります。
+:br
+
+```
+.
+├── styles
+│   ├── layout.css
+└── uno.config.ts
+```
 
 ---
 
@@ -113,6 +119,24 @@ Learning
 
 ---
 
+# TIPS
+
+<twemoji-light-bulb/> front matterで[サービスイメージに合わせたカラースキーマに設定することもできます]{.underline}。
+
+:br
+
+```yaml
+---
+# 例:
+themeConfig:
+  # top | career | student | en_try | learning
+  # デフォルトはcareer
+  service: learning
+---
+```
+
+:br
+
 <twemoji-light-bulb/> front matterやpackage.jsonで同名の変数を定義することで[これらを変更することもできます]{.underline}。
 
 :br
@@ -125,23 +149,13 @@ themeConfig:
 ---
 ```
 
-:br
-
-<twemoji-light-bulb/> front matterで[サービスイメージに合わせたカラースキーマに設定することもできます]{.underline}。
-
-:br
-
-```yaml
 ---
-# 例:
-themeConfig:
-  service: learning
----
-```
-
+layout: intro
 ---
 
 # TYPOGRAPHY
+
+---
 
 ## 平家物語
 
@@ -154,6 +168,8 @@ themeConfig:
 :br
 
 ```markdown
+## 平家物語
+
 祇園精舍の鐘の声、[諸行無常の響きあり]{.underline}。[娑羅双樹](https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%A9%E3%82%BD%E3%82%A6%E3%82%B8%E3%83%A5)の花の色、盛者必衰の理をあらはす。
 
 驕れる人も久しからず、ただ `春の夜の夢` のごとし。
@@ -162,10 +178,14 @@ themeConfig:
 ```
 
 ---
+layout: intro
+---
 
 # COMPONENT
 
-## Label
+---
+
+# Label
 
 badgeのようなコンポーネントです。
 
@@ -205,7 +225,7 @@ transition: fade
 
 ---
 layout: end
-class: "text-center"
+class: text-center
 ---
 
 # 異能を伸ばせ
