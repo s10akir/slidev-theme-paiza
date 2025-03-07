@@ -50,6 +50,37 @@
   }
 }
 
+/* service指定がない場合のフォールバック */
+.slidev-layout {
+  --slidev-theme-primary: var(--slidev-theme-career-primary);
+  --slidev-theme-secondary: var(--slidev-theme-career-secondary);
+}
+
+.slidev-layout.top {
+  --slidev-theme-primary: var(--slidev-theme-top-primary);
+  --slidev-theme-secondary: var(--slidev-theme-top-secondary);
+}
+
+.slidev-layout.career {
+  --slidev-theme-primary: var(--slidev-theme-career-primary);
+  --slidev-theme-secondary: var(--slidev-theme-career-secondary);
+}
+
+.slidev-layout.student {
+  --slidev-theme-primary: var(--slidev-theme-student-primary);
+  --slidev-theme-secondary: var(--slidev-theme-student-secondary);
+}
+
+.slidev-layout.en_try {
+  --slidev-theme-primary: var(--slidev-theme-en_try-primary);
+  --slidev-theme-secondary: var(--slidev-theme-en_try-secondary);
+}
+
+.slidev-layout.learning {
+  --slidev-theme-primary: var(--slidev-theme-learning-primary);
+  --slidev-theme-secondary: var(--slidev-theme-learning-secondary);
+}
+
 .slidev-layout.cover,
 .slidev-layout.lead,
 .slidev-layout.end {
@@ -91,10 +122,10 @@ u,
 
 strong,
 .strong {
-  color: var(--slidev-theme-career-primary);
+  color: var(--slidev-theme-primary);
 }
 
 :not(pre) > code {
-  background-color: var(--slidev-theme-career-primary) !important;
+  background-color: var(--slidev-theme-primary) !important;
   color: var(--slidev-theme-anti);
 }

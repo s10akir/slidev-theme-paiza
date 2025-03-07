@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout cover text-white">
+  <div class="slidev-layout cover text-white" :class="$slidev.themeConfigs?.service">
     <div class="my-auto w-full">
       <slot />
       <svg class="cover-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 58.49">
@@ -12,9 +12,21 @@
   </div>
 </template>
 
+<script setup>
+import { computed } from 'vue';
+
+const props = defineProps({
+  service: {
+    type: String,
+    default: 'career',
+  }
+});
+</script>
+
 <style scoped>
+
 .cover {
-  background-color: var(--slidev-theme-career-primary);
+  background-color: var(--slidev-theme-primary);
   color: var(--slidev-theme-anti);
   outline: 0.125rem solid var(--slidev-theme-anti);
   outline-offset: -2rem;

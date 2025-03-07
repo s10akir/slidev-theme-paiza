@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout lead">
+  <div class="slidev-layout lead" :class="$slidev.themeConfigs?.service">
     <div class="my-auto">
       <slot />
     </div>
@@ -8,7 +8,7 @@
 
 <style scoped>
 .lead {
-  outline: 0.125rem solid var(--slidev-theme-career-primary);
+  outline: 0.125rem solid var(--slidev-theme-primary);
   outline-offset: -2rem;
 }
 </style>

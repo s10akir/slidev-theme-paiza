@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout toc">
+  <div class="slidev-layout toc" :class="$slidev.themeConfigs?.service">
     <div class="grid grid-cols-4 h-full" style="">
       <div class="toc-title flex items-center justify-center">
         <h1>TABLE OF CONTENTS</h1>

@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout default">
+  <div class="slidev-layout default" :class="$slidev.themeConfigs?.service">
     <slot />
   </div>
 </template>
@@ -11,7 +11,7 @@
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 
-  outline: 0.125rem solid var(--slidev-theme-career-primary);
+  outline: 0.125rem solid var(--slidev-theme-primary);
   outline-offset: -2rem;
 
   h1 {

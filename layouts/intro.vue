@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout intro">
+  <div class="slidev-layout intro" :class="$slidev.themeConfigs?.service">
     <div class="grid grid-cols-4 h-full" style="">
       <div class="band-title flex items-center justify-center">
         <h1></h1>
@@ -16,7 +16,7 @@
   padding: 0rem;
   height: 100%;
 
-  outline: 0.125rem solid var(--slidev-theme-career-primary);
+  outline: 0.125rem solid var(--slidev-theme-primary);
   outline-offset: -2rem;
 
   .band-title {
@@ -31,7 +31,7 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
-    background-color: var(--slidev-theme-career-primary);
+    background-color: var(--slidev-theme-primary);
 
     writing-mode: vertical-rl;
     text-orientation: sideways;

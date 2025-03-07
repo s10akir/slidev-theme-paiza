@@ -3,6 +3,8 @@ theme: ./
 transition: fade-out
 mdc: true
 # aspectRatio: 4/3
+themeConfig:
+  service: career
 ---
 
 # slidev-theme-paiza
