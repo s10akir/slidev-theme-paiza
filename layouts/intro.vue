@@ -4,8 +4,10 @@
       <div class="band-title flex items-center justify-center">
         <h1></h1>
       </div>
-      <div class="content col-span-3 h-full">
-        <slot />
+      <div class="content col-span-3 h-full flex items-center">
+        <div>
+          <slot />
+        </div>
       </div>
     </div>
   </div>
