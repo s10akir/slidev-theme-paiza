@@ -125,6 +125,20 @@ themeConfig:
 ---
 ```
 
+:br
+
+<twemoji-light-bulb/> front matterで[サービスイメージに合わせたカラースキーマに設定することもできます]{.underline}。
+
+:br
+
+```yaml
+---
+# 例:
+themeConfig:
+  service: learning
+---
+```
+
 ---
 
 # TYPOGRAPHY
@@ -156,11 +170,22 @@ themeConfig:
 badgeのようなコンポーネントです。
 
 <Label>OK</Label>
+<Label :outline="false">OK</Label>
+<Label color="attention">必須</Label>
+<Label color="attention" :outline="false">必須</Label>
+<Label color="annotation" :outline="true">通過ランク：S</Label>
+<Label color="annotation" :outline="false">通過ランク：S</Label>
+
+:br
+
+```html
+<Label>OK</Label>
 <Label color="attention">必須</Label>
 <Label :outline="false">OK</Label>
 <Label color="attention" :outline="false">必須</Label>
 <Label color="annotation" :outline="true">通過ランク：S</Label>
 <Label color="annotation" :outline="false">通過ランク：S</Label>
+```
 
 ---
 
