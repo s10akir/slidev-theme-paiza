@@ -1,4 +1,5 @@
 <script setup>
+import PaizaFrame from "../components/paiza-frame.vue";
 const props = defineProps({
   class: {
     type: String,
@@ -6,7 +7,7 @@ const props = defineProps({
   layoutClass: {
     type: String,
   },
-})
+});
 </script>
 
 <template>
@@ -14,6 +15,7 @@ const props = defineProps({
     class="slidev-layout two-columns w-full h-full grid grid-cols-2"
     :class="[props.layoutClass, $slidev.themeConfigs?.service]"
   >
+    <PaizaFrame />
     <div class="col-left" :class="props.class">
       <slot />
       <slot name="left" />

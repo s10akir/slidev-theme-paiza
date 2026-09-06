@@ -1,28 +1,30 @@
+<script setup>
+import PaizaFrame from "../components/paiza-frame.vue";
+</script>
+
 <template>
-  <div class="slidev-layout cover text-white" :class="$slidev.themeConfigs?.service">
-    <div class="my-auto w-full">
+  <div class="slidev-layout cover" :class="$slidev.themeConfigs?.service">
+    <PaizaFrame :show-title="false" :show-page="false" />
+    <div class="cover-content my-auto w-full">
       <slot />
-      <img class="cover-logo" src="./logo.svg" alt="" />
     </div>
+    <img class="cover-logo" src="./logo.svg" alt="" />
   </div>
 </template>
 
 <style scoped>
-.cover {
-  --slidev-theme-emphasis: var(--slidev-theme-anti);
-  background-color: var(--slidev-theme-primary);
-  color: var(--slidev-theme-anti);
-  outline: var(--slidev-theme-frame-width) solid var(--slidev-theme-anti);
-  outline-offset: calc(-1 * var(--slidev-theme-frame-inset));
-}
-
 .cover-logo {
   position: absolute;
-  bottom: -10%;
-  right: -5%;
-  width: 50%;
+  right: -4%;
+  bottom: -18%;
+  width: 38%;
   margin: 0;
-  padding: 0;
-  opacity: 0.3;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.cover-content {
+  position: relative;
+  z-index: 1;
 }
 </style>

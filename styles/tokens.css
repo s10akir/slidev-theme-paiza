@@ -1,6 +1,6 @@
 :root {
   /* base colors */
-  --slidev-theme-normal: #333333;
+  --slidev-theme-normal: #25363a;
   --slidev-theme-anti: #ffffff;
   --slidev-theme-success: #108924;
   --slidev-theme-attention: #ea640a;
@@ -39,13 +39,13 @@
   --slidev-theme-border-separator: #dfe0e2;
 
   /* Layout metrics */
-  --slidev-theme-content-padding-x: 5.5rem;
+  --slidev-theme-content-padding-x: 14%;
   --slidev-theme-content-padding-y: 4.5rem;
-  --slidev-theme-frame-width: 0.125rem;
-  --slidev-theme-frame-inset: 2rem;
+  --slidev-theme-frame-width: 1px;
+  --slidev-theme-frame-inset: 5.5%;
+  --slidev-theme-heading-weight: 300;
   --slidev-theme-column-gap: 2rem;
 
   --slidev-code-background: var(--slidev-theme-b-accent);
   --slidev-code-radius: 4px;
 }
-

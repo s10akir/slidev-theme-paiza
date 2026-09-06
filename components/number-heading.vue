@@ -3,7 +3,9 @@
     <div :class="getNoClass()" style="color: var(--slidev-theme-primary)">
       {{ no }}
     </div>
-    <div :class="getTextClass() + (underline === true ? ' underline' : '')">{{ text }}</div>
+    <div :class="getTextClass() + (underline === true ? ' underline' : '')">
+      {{ text }}
+    </div>
   </div>
 </template>
 
@@ -21,11 +23,11 @@ const props = defineProps({
 const getNoClass = () => {
   switch (props.variant) {
     case "large":
-      return "text-8xl font-bold pr-2";
+      return "text-8xl font-light pr-4";
     case "inline":
-      return "font-bold pr-2";
+      return "font-light pr-4";
     default:
-      return "text-5xl font-bold pr-2";
+      return "text-5xl font-light pr-4";
   }
 };
 
