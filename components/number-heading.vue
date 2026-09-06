@@ -11,7 +11,10 @@
 const props = defineProps({
   no: Number,
   text: String,
-  variant: "large" | null,
+  variant: {
+    type: String,
+    validator: (value) => ["large", "inline"].includes(value),
+  },
   underline: Boolean,
 });
 

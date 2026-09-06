@@ -12,6 +12,7 @@ defineProps({
   color: {
     type: String,
     default: "success",
+    validator: (value) => ["success", "attention", "annotation"].includes(value),
   },
   outline: {
     type: Boolean,
@@ -31,24 +32,27 @@ defineProps({
   display: inline-block;
   font-weight: 600;
 
-  &-success {
-    @apply text-success bg-success;
-  }
+  color: var(--label-color);
+  background-color: var(--label-color);
+}
 
-  &-attention {
-    @apply text-attention bg-attention;
-  }
+.label-success {
+  --label-color: var(--slidev-theme-success);
+}
 
-  &-annotation {
-    @apply text-annotation bg-annotation;
-  }
+.label-attention {
+  --label-color: var(--slidev-theme-attention);
+}
 
-  &-outline {
-    @apply bg-transparent;
-  }
+.label-annotation {
+  --label-color: var(--slidev-theme-annotation);
+}
 
-  &-fill {
-    @apply text-anti;
-  }
+.label-outline {
+  background-color: transparent;
+}
+
+.label-fill {
+  color: var(--slidev-theme-anti);
 }
 </style>

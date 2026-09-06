@@ -39,15 +39,14 @@ export default defineConfig({
       "border-outline":    "var(--slidev-theme-border-outline)",
       "border-separator":  "var(--slidev-theme-border-separator)",
       
-      /* ここから下はWIP */
       // button colors
       "button-cta": "#19B300",
       "button-cta-hover": "#1DCF00",
       "button-primary": "#0D7BD3",
       "button-primary-hover": "#0F7FFA",
       "button-tertiary": "#E2EEFF",
-      "button-tertiary-hover": "EDF5FF",
-      "button-neutral": "#BCCC0CB",
+      "button-tertiary-hover": "#EDF5FF",
+      "button-neutral": "#BCC0CB",
       "button-neutral-hover": "#DFE0E2",
       "color-danger": "#DA2F2F",
       "color-danger-hover": "#F3453F",
@@ -58,11 +57,12 @@ export default defineConfig({
       "text-anti": "#FFFFFF",
       "text-annotation": "#6E7687",
       "text-disabled": "#BCC0C8",
-      "text-link": "0D6BD3",
+      "text-link": "#0D6BD3",
       "text-link-hover": "#0F7FFA",
       "text-subtle-link": "#333333",
       "text-subtle-link-hover": "#6E7687",
-      "text-noitice": "#DA2F2F",
+      "text-notice": "#DA2F2F",
+      "text-noitice": "#DA2F2F", // Alias of text-notice.
       "text-attention": "#EA640A",
       "text-success": "#108924",
       "text-accent": "#FF253A",
@@ -71,7 +71,7 @@ export default defineConfig({
       // background colors
       "bg-normal": "#FFFFFF",
       "bg-accent": "#F5F9FF",
-      "bg-information": "F5F9FF",
+      "bg-information": "#F5F9FF",
       "bg-form": "#F5F9FF",
       "bg-disabled": "#D2D5DA",
       "bg-error": "#FEF9F9",
@@ -111,11 +111,6 @@ export default defineConfig({
       "label-student": "#195C9A",
       "label-en_try": "#3C3C3C",
 
-      // footer color
-      // TODO
-
-      // header color
-      // TODO
     },
   },
 });
