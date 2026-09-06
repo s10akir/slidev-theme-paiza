@@ -41,10 +41,9 @@ UnoCSS では `text-normal` のように使える。
 
 # Service colors
 
-`themeConfig.service` で primary / secondary が切り替わる。  
-選択肢: `top` | `career` | `student` | `en_try` | `learning`（デフォルトは `career`）
+`themeConfig.service` で primary / secondary を切り替える。default は `career`。
 
-::div{.grid.grid-cols-3}
+::div{.grid.grid-cols-3.gap-x-4.gap-y-2}
 
 :::div
 top
