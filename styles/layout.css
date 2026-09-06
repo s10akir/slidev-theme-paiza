@@ -38,7 +38,7 @@
 
 .slidev-layout {
   background-color: var(--slidev-theme-anti);
-  color: var(--slidev-theme-black);
+  color: var(--slidev-theme-normal);
 
   h1 + p,
   h1 + ul,
@@ -81,9 +81,35 @@
   --slidev-theme-secondary: var(--slidev-theme-learning-secondary);
 }
 
-.slidev-layout.cover,
+.slidev-layout.default,
+.slidev-layout.center,
+.slidev-layout.intro,
+.slidev-layout.statement,
 .slidev-layout.lead,
-.slidev-layout.end {
+.slidev-layout.quote,
+.slidev-layout.fact,
+.slidev-layout.two-columns,
+.slidev-layout.two-cols-header {
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  outline: 0.125rem solid var(--slidev-theme-primary);
+  outline-offset: -2rem;
+}
+
+.slidev-layout.default h1 {
+  font-weight: 700;
+}
+
+.slidev-layout.cover,
+.slidev-layout.end,
+.slidev-layout.intro,
+.slidev-layout.statement,
+.slidev-layout.lead,
+.slidev-layout.fact,
+.slidev-layout.quote,
+.slidev-layout.center {
   @apply h-full grid;
 
   p + h2,
@@ -93,22 +119,64 @@
   }
 }
 
-.slidev-layout.lead {
-  @apply text-center;
-
-  h1 {
-    @apply text-5xl leading-20;
-  }
-}
-
 .slidev-layout.cover,
-.slidev-layout.end {
+.slidev-layout.end,
+.slidev-layout.intro {
   h1 {
     @apply text-6xl leading-20;
   }
   h1 + p {
     @apply opacity-50;
   }
+}
+
+.slidev-layout.statement,
+.slidev-layout.lead {
+  @apply text-center;
+
+  h1 {
+    @apply text-5xl leading-20 font-700;
+  }
+}
+
+.slidev-layout.center {
+  @apply text-center;
+}
+
+.slidev-layout.fact {
+  @apply text-center;
+
+  h1 {
+    @apply text-8xl font-700;
+  }
+  h1 + p {
+    @apply font-700 text-2xl opacity-100;
+  }
+}
+
+.slidev-layout.quote {
+  h1 {
+    @apply text-4xl font-700;
+  }
+  h1 + p {
+    @apply mt-2 opacity-50;
+  }
+}
+
+.slidev-layout.section,
+.slidev-layout.toc,
+.slidev-layout.full {
+  padding: 0;
+}
+
+.slidev-layout.section {
+  outline: 0.125rem solid var(--slidev-theme-primary);
+  outline-offset: -2rem;
+}
+
+.slidev-layout.two-columns,
+.slidev-layout.two-cols-header {
+  column-gap: 2rem;
 }
 
 u,

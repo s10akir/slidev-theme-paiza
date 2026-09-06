@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout statement lead" :class="$slidev.themeConfigs?.service">
+  <div class="slidev-layout quote" :class="$slidev.themeConfigs?.service">
     <div class="my-auto">
       <slot />
     </div>

@@ -31,9 +31,27 @@ Learn more about [how to use a theme](https://sli.dev/themes/use).
 
 ## Layouts
 
-This theme provides the following layouts:
+Built-in Slidev layouts, restyled:
 
-> TODO:
+- `cover` — title slide
+- `intro` — introduce the talk
+- `default` — basic content
+- `center` — centered content
+- `section` — section divider
+- `statement` — prominent statement
+- `fact` — prominent number / fact
+- `quote` — quotation
+- `full` — no frame, full canvas
+- `two-cols` / `two-cols-header` — columns
+- `image` / `image-left` / `image-right`
+- `end` — closing slide
+
+`iframe`, `iframe-left`, `iframe-right`, and `none` fall through to Slidev built-ins.
+
+Theme extras:
+
+- `toc` — table of contents
+- `lead` — alias of `statement`
 
 ## Components
 
