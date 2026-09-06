@@ -8,7 +8,10 @@ export default defineConfig({
       "success":    "var(--slidev-theme-success)",
       "attention":  "var(--slidev-theme-attention)",
       "annotation": "var(--slidev-theme-annotation)",
+      "disabled":   "var(--slidev-theme-disabled)",
       "tertiary":   "var(--slidev-theme-tertiary)",
+      "link":       "var(--slidev-theme-link)",
+      "link-hover": "var(--slidev-theme-link-hover)",
 
       "top-primary":        "var(--slidev-theme-top-primary)",
       "top-secondary":      "var(--slidev-theme-top-secondary)",
@@ -33,6 +36,8 @@ export default defineConfig({
       "b-error":       "var(--slidev-theme-b-error)",
       "b-attention":   "var(--slidev-theme-b-attention)",
       "b-safe":        "var(--slidev-theme-b-safe)",
+      "border-outline":    "var(--slidev-theme-border-outline)",
+      "border-separator":  "var(--slidev-theme-border-separator)",
       
       /* ここから下はWIP */
       // button colors
@@ -74,8 +79,6 @@ export default defineConfig({
       "bg-safe": "#EBFFEE",
 
       // border color
-      "border-outline": "#CCCCCC",
-      "border-separator": "#DFE0E2",
       "border-error": "#DA2F2F",
       "border-info": "#008CBB",
 

@@ -8,9 +8,7 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
-
-const props = defineProps({
+defineProps({
   color: {
     type: String,
     default: "success",
@@ -20,12 +18,6 @@ const props = defineProps({
     default: true,
   },
 });
-
-const style = computed(() => {
-  return {
-    background: props.outline ? "transparent" : "bg-text-" + props.color,
-  };
-});
 </script>
 
 <style scoped>
@@ -34,7 +26,7 @@ const style = computed(() => {
   border: 0.0625rem solid;
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.9375rem;
+  border-radius: 3px;
   width: fit-content;
   display: inline-block;
   font-weight: 600;
@@ -56,7 +48,7 @@ const style = computed(() => {
   }
 
   &-fill {
-    @apply text-text-anti;
+    @apply text-anti;
   }
 }
 </style>

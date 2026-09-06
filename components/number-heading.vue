@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-baseline">
-    <div :class="getNoClass()" style="color: var(--slidev-theme-career-primary)">
+    <div :class="getNoClass()" style="color: var(--slidev-theme-primary)">
       {{ no }}
     </div>
     <div :class="getTextClass() + (underline === true ? ' underline' : '')">{{ text }}</div>
