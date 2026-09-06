@@ -2,22 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-paiza?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-paiza)
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
-
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+paizaのサービスカラーを使用するSlidevテーマです。
 
 ## Install
 
@@ -55,9 +40,60 @@ Theme extras:
 
 ## Components
 
-This theme provides the following components:
+### Label
 
-> TODO:
+```html
+<Label>success</Label>
+<Label color="attention" :outline="false">注意</Label>
+```
+
+- `color`: `success`（既定） / `attention` / `annotation`
+- `outline`: `true`（既定）で枠、`false`で塗り
+
+### NumberHeading
+
+```html
+<NumberHeading :no="1" text="見出し" />
+<NumberHeading :no="2" text="大きい見出し" variant="large" />
+<NumberHeading :no="3" text="本文サイズ" variant="inline" underline />
+```
+
+`no` は数値、`text` は文字列。`variant` 省略時は標準サイズです。
+
+## Theme configuration
+
+```yaml
+themeConfig:
+  service: career
+```
+
+`service`: `top` / `career`（既定） / `student` / `en_try` / `learning`。
+テーマ配色はライト背景を前提としています。
+
+## Structure
+
+- `styles/tokens.css`: 色・共通余白・枠線の値。
+- `styles/layout.css`: 共通の文字装飾とレイアウト規則。
+- `layouts/`: 各レイアウトの構造と固有の装飾。
+- `uno.config.ts`: UnoCSSの色名とCSS変数・固定色の対応。
+- `example.md`: レイアウトとコンポーネントの表示確認用デッキ。
+
+共通の余白・枠線はCSS変数、各レイアウト固有の余白は個別のスタイルで定義しています。
+`text-noitice` は `text-notice` の別名です。
+
+### Verification
+
+```sh
+npm run check
+```
+
+コンポーネントpropsと色定義の検証後、サンプルをビルドします。
+表示の確認には `npm run dev`、出力の確認には `npm run screenshot` / `npm run export` を使います。
+画像・PDF出力にはSlidevのブラウザ実行環境が必要です。
+
+表示確認用デッキには、表、リスト、コード、Label全種、NumberHeading全種、
+終了ページの強調を含みます。配色は `themeConfig.service` で切り替えられます。
+サンプルの外部画像とWebフォントはネットワークに依存します。
 
 ## Contributing
 
