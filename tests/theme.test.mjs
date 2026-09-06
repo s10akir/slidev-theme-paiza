@@ -47,6 +47,21 @@ test('Label compiles explicit foreground and background colors without UnoCSS', 
   assert.match(code, /\.label-fill[^}]+color: var\(--slidev-theme-anti\)/s)
 })
 
+test('SlideNote stays in the lower safe area as a single line', () => {
+  const { descriptor, errors } = parse(read('components/slide-note.vue'))
+  assert.deepEqual(errors, [])
+  const { code, errors: styleErrors } = compileStyle({
+    source: descriptor.styles[0].content,
+    filename: 'slide-note.vue',
+    id: 'data-v-test',
+    scoped: true,
+  })
+  assert.deepEqual(styleErrors, [])
+  assert.match(code, /position: absolute/)
+  assert.match(code, /text-align: left/)
+  assert.match(code, /white-space: nowrap/)
+})
+
 test('UnoCSS color literals are valid hex colors and token references exist', () => {
   const config = read('uno.config.ts')
   const tokens = read('styles/tokens.css') + read('styles/layout.css')
