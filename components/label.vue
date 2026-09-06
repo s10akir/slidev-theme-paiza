@@ -26,7 +26,7 @@ defineProps({
   border: 0.0625rem solid;
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 3px;
+  border-radius: 1rem;
   width: fit-content;
   display: inline-block;
   font-weight: 600;
