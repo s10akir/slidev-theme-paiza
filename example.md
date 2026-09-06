@@ -1,5 +1,6 @@
 ---
 theme: ./
+title: slidev-theme-paiza
 layout: cover
 transition: fade-out
 mdc: true
@@ -11,9 +12,9 @@ themeConfig:
 
 サブタイトル
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   cover：表紙。themeConfig.service でサービス配色を指定。
-</div>
+</SlideNote>
 
 ---
 layout: intro
@@ -23,9 +24,9 @@ layout: intro
 
 本文
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   intro：導入。見出しと本文を縦方向の中央に配置。
-</div>
+</SlideNote>
 
 ---
 layout: toc
@@ -37,9 +38,9 @@ layout: toc
 <NumberHeading :no="2" text="項目" />
 <NumberHeading :no="3" text="項目" />
 
-<div class="absolute bottom-10 right-14 text-sm leading-tight text-left opacity-70" style="left: calc(25% + 3.5rem)">
-  toc：目次。左の帯と右の本文領域で構成。
-</div>
+<SlideNote>
+  toc：目次。大きな見出しと番号付き項目で構成。
+</SlideNote>
 
 ---
 layout: section
@@ -49,9 +50,9 @@ layout: section
 
 本文
 
-<div class="absolute bottom-10 right-14 text-sm leading-tight text-left opacity-70" style="left: calc(25% + 3.5rem)">
-  section：章扉。左にサービスカラーの帯を配置。
-</div>
+<SlideNote>
+  section：章扉。細身の大見出しを中央に配置。
+</SlideNote>
 
 ---
 layout: default
@@ -69,9 +70,9 @@ layout: default
 
 本文。
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
-  default：サービスカラーの枠。強調は primary 色、下線はマーカー風。
-</div>
+<SlideNote>
+  default：対角の細い枠。強調と下線にはサービスカラーを使用。
+</SlideNote>
 
 ---
 layout: default
@@ -103,9 +104,9 @@ layout: quote
 
 出典
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   quote：引用。見出しを大きく、続く段落を出典として表示。
-</div>
+</SlideNote>
 
 ---
 layout: two-cols
@@ -127,9 +128,9 @@ layout: two-cols
 - 項目1
 - 項目2
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   two-cols：左右2列。右列は ::right:: で指定。
-</div>
+</SlideNote>
 
 ---
 layout: statement
@@ -139,9 +140,9 @@ layout: statement
 
 本文
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   statement：主張。大きな見出しを中央揃え。lead も同じ表示。
-</div>
+</SlideNote>
 
 ---
 layout: fact
@@ -151,9 +152,9 @@ layout: fact
 
 単位・説明
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   fact：数値を大きく表示。続く段落はキャプション。
-</div>
+</SlideNote>
 
 ---
 layout: two-cols-header
@@ -177,9 +178,9 @@ layout: two-cols-header
 
 下部本文。
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   two-cols-header：共通見出しと2列。::left:: / ::right:: / ::bottom:: で配置。
-</div>
+</SlideNote>
 
 ---
 layout: default
@@ -201,9 +202,9 @@ const items: Item[] = [
 
 本文中の `items`。
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   コード：薄い背景と枠線。インラインコードは角丸の背景付き。
-</div>
+</SlideNote>
 
 ---
 layout: image-right
@@ -214,9 +215,9 @@ image: https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&
 
 本文。
 
-<div class="absolute bottom-10 left-14 text-sm leading-tight text-left opacity-70" style="right: calc(50% + 3.5rem)">
-  image-right：右半分に画像。image でURL、backgroundSize で画像のサイズを指定。
-</div>
+<SlideNote>
+  image-right：右半分に画像を配置。image でURLを指定。
+</SlideNote>
 
 ---
 layout: center
@@ -226,9 +227,9 @@ layout: center
 
 本文
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   center：見出しと本文を縦横の中央に配置。
-</div>
+</SlideNote>
 
 ---
 layout: default
@@ -258,9 +259,9 @@ layout: default
 <Label color="attention" :outline="false">attention</Label>
 <Label color="annotation" :outline="false">annotation</Label>
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   Label：color で3色を指定。上段は outline=true、下段は outline=false。
-</div>
+</SlideNote>
 
 ---
 layout: default
@@ -272,9 +273,9 @@ layout: default
 <NumberHeading :no="2" text="見出し" variant="large" />
 <NumberHeading :no="3" text="見出し" variant="inline" underline />
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   NumberHeading：no と text を指定。上から標準・large・inline。最下段は underline 付き。
-</div>
+</SlideNote>
 
 ---
 layout: full
@@ -295,9 +296,9 @@ layout: full
   </div>
 </div>
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
+<SlideNote>
   full：枠・余白なし。この例は3列グリッドと背景色の組み合わせ。
-</div>
+</SlideNote>
 
 ---
 layout: end
@@ -308,6 +309,6 @@ class: text-center
 
 本文
 
-<div class="absolute bottom-10 left-14 right-14 text-sm leading-tight text-left opacity-70">
-  end：サービスカラー背景の終了ページ。強調は白文字。
-</div>
+<SlideNote>
+  end：サービスカラー背景の終了ページ。大きな見出しを中央に配置。
+</SlideNote>

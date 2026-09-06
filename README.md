@@ -18,7 +18,7 @@ Learn more about [how to use a theme](https://sli.dev/themes/use).
 
 Built-in Slidev layouts, restyled:
 
-- `cover` — title slide
+- `cover` — service-color title slide with an oversized logo watermark
 - `intro` — introduce the talk
 - `default` — basic content
 - `center` — centered content
@@ -60,15 +60,29 @@ Theme extras:
 
 `no` は数値、`text` は文字列。`variant` 省略時は標準サイズです。
 
+### SlideNote
+
+```html
+<SlideNote>このスライドについての補足</SlideNote>
+```
+
+スライド下端の余白に、短い補足や出典を表示します。中央揃えのレイアウトでも
+左揃えを維持します。1行表示を前提としているため、長い説明は本文か発表者ノートを使用してください。
+
 ## Theme configuration
 
 ```yaml
 themeConfig:
   service: career
+  header: ENGINEERING LT
 ```
 
 `service`: `top` / `career`（既定） / `student` / `en_try` / `learning`。
 テーマ配色はライト背景を前提としています。
+
+フレーム左上には、スライド全体のfrontmatterに指定した`title`をそのまま表示します。
+表紙では本文のタイトルと重複するため表示しません。`header`はタイトルの右側に添える
+短い任意テキストで、表紙にも表示されます。
 
 ## Structure
 
