@@ -4,6 +4,15 @@
 
 paizaのサービスカラーを使用するSlidevテーマです。
 
+## Sample
+
+[`example.md`](example.md)をそのまま書き出した[サンプルPDF](output/pdf/example.pdf)です。
+表紙をクリックすると全ページを確認できます。
+
+[![サンプルスライドの表紙](output/pdf/example.png)](output/pdf/example.pdf)
+
+`npm run export` でPDFを再生成できます。
+
 ## Install
 
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
