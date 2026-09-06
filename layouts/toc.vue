@@ -32,8 +32,8 @@
     writing-mode: vertical-rl;
     text-orientation: sideways;
 
-    outline: 0.125rem solid var(--slidev-theme-anti);
-    outline-offset: -2rem;
+    outline: var(--slidev-theme-frame-width) solid var(--slidev-theme-anti);
+    outline-offset: calc(-1 * var(--slidev-theme-frame-inset));
   }
 
   .content {

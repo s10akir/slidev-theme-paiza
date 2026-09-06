@@ -9,10 +9,11 @@
 
 <style scoped>
 .cover {
+  --slidev-theme-emphasis: var(--slidev-theme-anti);
   background-color: var(--slidev-theme-primary);
   color: var(--slidev-theme-anti);
-  outline: 0.125rem solid var(--slidev-theme-anti);
-  outline-offset: -2rem;
+  outline: var(--slidev-theme-frame-width) solid var(--slidev-theme-anti);
+  outline-offset: calc(-1 * var(--slidev-theme-frame-inset));
 }
 
 .cover-logo {
